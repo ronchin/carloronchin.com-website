@@ -1,0 +1,1563 @@
+@font-face {
+  font-family: Raisonne;
+  src: url(../font/Raisonne_DemiBold.ttf);
+}
+
+@font-face {
+  font-family: Akkurat;
+  src: url(../font/Akkurat-Mono.OTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+/*--------------------------- Colori------------------ */
+/*---------------------------------------------------- */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: Akkurat, Raisonne, Montserrat, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #011627;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 25px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 5;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+nav a {
+  font-family: Raisonne, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 38px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav_items a:hover {
+  color: #E71D36 !important;
+}
+
+.nav_items {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#logo_navbar {
+  cursor: pointer;
+}
+
+.navbar_pagina a {
+  color: #757575 !important;
+}
+
+#pathh {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#pathh:hover {
+  fill: #FF9F1C;
+}
+
+/*Hero Pagina Home */
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #011627;
+}
+
+.hero h1 {
+  font-family: Raisonne, Akkurat, sans-serif;
+  color: #fff;
+  font-size: 144px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.sub_hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero h2 {
+  font-family: Raisonne, Akkurat, sans-serif;
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: 6.5px;
+  margin-top: -30px;
+}
+
+.stripes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.stripes svg {
+  margin-bottom: 15px;
+}
+
+#stripe_2 {
+  position: relative;
+  left: 50%;
+}
+
+.button {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 250px;
+}
+
+.button button {
+  width: 75px;
+  height: 75px;
+  padding: 18px;
+  border-radius: 90px;
+  margin-left: 15px;
+  background-color: transparent;
+  border: white solid 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button svg {
+  margin: 5px auto 0 auto;
+}
+
+.button p {
+  margin: 0;
+  font-family: Raisonne, Akkurat, sans-serif;
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 0%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*----- Hover Button Main ---------*/
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover button {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button:hover button svg path {
+  fill: #011627;
+}
+
+/* ---- FASCIA SERVIZI ---- */
+.fascia_servizi {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#titolo_servizi_index {
+  font-family: Raisonne;
+  color: #E71D36;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-top: 50px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.fascia_servizi h1 {
+  font-family: Raisonne;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+.servizio {
+  width: 50%;
+  margin: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.servizio_inverso {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.servizio img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 40px auto 40px auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.testo {
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.title h4 {
+  font-family: Raisonne,sans-serif;
+  margin: 0;
+  font-size: 36px;
+}
+
+.testo p {
+  color: #757575;
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 16px;
+}
+
+.testo button {
+  font-family: Raisonne, sans-serif;
+  font-size: 15px;
+  color: #000;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #ebebeb), color-stop(50%, #2EC4B6));
+  background: linear-gradient(to left, #ebebeb 50%, #2EC4B6 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+  width: 220px;
+  height: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.testo button:hover {
+  background-position: left bottom;
+  color: #FDFFFC;
+}
+
+/*--------- Fascia BUILD OWN SHEEL --------------------------------*/
+.fascia_shell {
+  background-color: #2EC4B6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.shell_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  white-space: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.shell_row h5 {
+  margin-right: 15px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  color: #2EC4B6;
+  font-size: 70px;
+  -webkit-text-stroke-color: #011627;
+  -webkit-text-stroke-width: 2.5px;
+}
+
+#row_center {
+  -webkit-text-stroke-color: #E71D36;
+  -webkit-text-stroke-width: 2.5px;
+}
+
+/*--------- Fascia Portfolio --------------------------------*/
+.fascia_concept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+#titolo_fascia_concept {
+  margin: 50px auto 0 auto;
+  font-family: Raisonne, Montserrat, sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #FDFFFC;
+}
+
+.concept {
+  margin: 50px auto;
+  max-width: 75%;
+  min-width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.concept_inverso {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.concept img {
+  max-width: 100%;
+  min-width: 30%;
+}
+
+.concept_margin {
+  margin-top: 150px;
+}
+
+.testo_concept {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto 0;
+  z-index: 2;
+}
+
+.inverso_testo_concept {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: end;
+  padding: 0 0 0 50px;
+}
+
+#title_1 {
+  z-index: 1;
+}
+
+.testo_concept h1 {
+  font-family: Raisonne, sans-serif;
+  letter-spacing: 1px;
+  font-size: 140px;
+  color: transparent;
+}
+
+.testo_concept p {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0;
+}
+
+.testo_concept_padding {
+  padding: 0 50px 0 0;
+}
+
+.concept img {
+  z-index: 1;
+  width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.concept_testo_button {
+  cursor: pointer;
+  margin: 40px 0 40px 0;
+  color: #fff;
+  font-size: 17px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #2EC4B6), color-stop(50%, #E71D36));
+  background: linear-gradient(to left, #2EC4B6 50%, #E71D36 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.concept_testo_button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+.footer {
+  background-color: #2EC4B6;
+  font-family: Akkurat, sans-serif;
+  padding-top: 100px;
+}
+
+.footer h1 {
+  font-family: Raisonne;
+  font-size: 4.6875rem;
+  letter-spacing: -7px;
+  color: #1E1E1E;
+}
+
+.testo_contatto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fascia_footer_upside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #2EC4B6;
+}
+
+.form-contatto {
+  max-width: 750px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form p {
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.input_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 4%;
+}
+
+.input_field,
+.msg {
+  width: 100%;
+}
+
+.input {
+  font-family: Akkurat, sans-serif;
+  font-size: 15px;
+  background: #2EC4B6;
+  width: 320px;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.msg textarea {
+  margin: 10px 10px;
+  background: transparent;
+  border: none;
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+  width: 90%;
+  font-size: 18px;
+  height: 150px;
+}
+
+::-webkit-input-placeholder {
+  color: grey;
+}
+
+button {
+  border: none;
+  color: white;
+  background: black;
+  font-family: Raisonne, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 215px;
+  height: 53px;
+}
+
+.form-contatto button {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, grey), color-stop(50%, #272727));
+  background: linear-gradient(to left, grey 50%, #272727 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form-contatto button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.fascia_footer_downside {
+  margin: 100px 16px 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box_footer {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_logo {
+  border: 1px solid black;
+}
+
+.footer_logo img {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.footer_privacy {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.footer_privacy a {
+  color: #000;
+  font-size: 20px;
+  font-family: Raisonne, Akkurat, sans-serif;
+  text-decoration: none;
+  margin: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #000;
+  font-size: 28px;
+  font-family: Raisonne, Akkurat, sans-serif;
+  text-decoration: none;
+  margin: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer_social {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.footer_social a img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.footer_social img {
+  margin: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*----------  MEDIA QUERIES ------------*/
+/* Media Query Smartphone */
+@media screen and (max-width: 600px) {
+  /*---------- Navbar ----------*/
+  #desktop_menu {
+    display: none;
+  }
+  #mobile_menu {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #2EC4B6;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #menu_logo {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+  #close_icon {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+  }
+  #mobile_menu a {
+    font-size: 1.5rem;
+    margin: 15px auto;
+  }
+  /*--------- Main ----------- */
+  .hero h1 {
+    font-size: 13vw;
+    white-space: nowrap;
+  }
+  .hero h2 {
+    font-size: 6vw;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+  }
+  .stripes {
+    width: 150px;
+    overflow: hidden;
+  }
+  /* ---------- Servizio ---------------*/
+  #titolo_servizi_index {
+    font-size: 2.3rem;
+    margin-top: 50px;
+    letter-spacing: 10px;
+  }
+  .servizio img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .servizio {
+    width: 80%;
+    margin: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .testo {
+    padding: 0;
+  }
+  .testo p {
+    font-size: 1rem;
+  }
+  /*---------- Build own shell ---------*/
+  .shell_row h5 {
+    font-size: 37px;
+    -webkit-text-stroke-width: 1.5px;
+  }
+  #row_center {
+    -webkit-text-stroke-color: #2EC4B6;
+    -webkit-text-stroke-width: 1px;
+  }
+  /*------------ Portfolio -------------*/
+  #titolo_fascia_concept {
+    font-size: 3rem;
+  }
+  .inverso_testo_concept {
+    text-align: left;
+    padding: 0;
+  }
+  .testo_concept h1 {
+    font-size: 4rem;
+  }
+  .testo_concept p {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  /*-------- Footer ---------*/
+  .form-contatto {
+    max-width: 750px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-contatto button {
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, grey), color-stop(50%, #272727));
+    background: linear-gradient(to left, grey 50%, #272727 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+  form p {
+    margin-left: 16px;
+  }
+  .testi_contatto {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #menu_logo {
+    display: none;
+  }
+  #mobile_menu {
+    display: none;
+  }
+}
+
+/*----------- servizi.html---------- -----------------------------------*/
+.body_servizi {
+  background-color: #011627 !important;
+}
+
+.fascia_servizio {
+  margin-top: 150px;
+  width: 100%;
+}
+
+#titolo_fascia_servizio {
+  font-family: Raisonne, sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sezioni_servizio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.sezione_servizio {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+}
+
+.testo_sezione_servizio {
+  padding: 15px 15px;
+  background-color: #fff;
+}
+
+.sezioni_servizio svg {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.sezione_servizio h4 {
+  font-family: Raisonne;
+  font-size: 2.5rem;
+}
+
+.sezione_servizio p {
+  padding-top: 16px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.sezione_servizio img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+}
+
+.button_servizio {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #1E1E1E));
+  background: linear-gradient(to left, white 50%, #1E1E1E 50%);
+  background-size: 200% 100%;
+  color: #1E1E1E;
+  background-position: right bottom;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.button_servizio:hover {
+  background-position: left bottom;
+  color: #FDFFFC;
+}
+
+/*----------------------- su_di_me.html ---------------------------------------*/
+#body_about {
+  background-color: #FDFFFC;
+}
+
+.fascia_about_chi {
+  padding-top: 150px;
+}
+
+.fascia_about_chi_interna {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sezioni_chi_sono {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sezione_testo_about_chi {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5;
+}
+
+.sezione_testo_about_chi img {
+  background: #EAEAEA;
+  width: 60%;
+  margin-top: 32px;
+  -webkit-box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+}
+
+.fascia_about_chi_interna h3 {
+  color: #E71D36;
+  font-family: Raisonne, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 6px;
+}
+
+.titolo_sezione_about {
+  position: relative;
+  left: 15%;
+  width: 25%;
+  color: #E71D36;
+  font-family: Raisonne, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 7px;
+  margin-bottom: 50px;
+}
+
+.sezione_testo_about_chi h1 {
+  font-family: Raisonne, sans-serif;
+  font-size: 2rem;
+  color: #011627;
+  letter-spacing: 2px;
+}
+
+.sezione_testo_about_chi p {
+  margin-top: 16px;
+  text-align: justify;
+}
+
+/* ------------------ Passione --------------------------------*/
+#fascia_about_passione {
+  padding-top: 200px;
+}
+
+.fascia_about_passione_interna {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sezioni_img_passione {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sezione_img_passione {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  margin: 0 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sezione_img_passione h4 {
+  font-family: Raisonne, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: #011627;
+}
+
+.sezione_img_passione p {
+  margin-top: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.sezione_img_passione img {
+  margin: 16px;
+}
+
+/* ------------------ Skill Set --------------------------------*/
+.fascia_about_skill {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.fascia_about_skill_interna {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sezioni_about_skill {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sezione_about_skill {
+  width: 100%;
+  min-width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.skill_data {
+  margin-left: 16px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill_dati {
+  font-family: Raisonne, sans-serif;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-left: 16px;
+}
+
+.skill_dati h3 {
+  font-size: 2.15rem;
+  letter-spacing: 1px;
+  margin-right: 16px;
+  color: #011627;
+  white-space: nowrap;
+}
+
+.skill_dati h5 {
+  font-size: 1.25rem;
+  color: #FF9F1C;
+  margin: 0 16px;
+  white-space: nowrap;
+}
+
+.skill_dati h4 {
+  font-size: 2.75rem;
+  color: #181918;
+  margin: 0 0 0 32px;
+  white-space: nowrap;
+}
+
+.progress_bar {
+  margin: 8px 0 0 16px;
+  width: 100%;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 2px -2px 45px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 2px -2px 45px -2px rgba(0, 0, 0, 0.49);
+}
+
+.progress_bar_1 {
+  width: 80%;
+  height: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#011627), to(#2EC4B6));
+  background: linear-gradient(90deg, #011627, #2EC4B6);
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 1px 51px -31px rgba(0, 0, 0, 0.69);
+  box-shadow: 3px 1px 51px -31px rgba(0, 0, 0, 0.69);
+}
+
+.bar_90 {
+  width: 90%;
+}
+
+.bar_80 {
+  width: 80%;
+}
+
+.bar_70 {
+  width: 70%;
+}
+
+.bar_60 {
+  width: 60%;
+}
+
+.bar_0 {
+  width: 0%;
+}
+
+.footer_contatti {
+  padding-top: 200px;
+  border: none;
+}
+
+/* MEDIA QUERIES ---- su_di_me.html */
+@media screen and (max-width: 600px) {
+  .fascia_about_chi_interna {
+    width: 75%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sezioni_chi_sono {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sezione_testo_about_chi {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1.5;
+  }
+  .sezione_testo_about_chi img {
+    background: #EAEAEA;
+    width: 60%;
+    margin-top: 32px;
+    -webkit-box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 55px 104px -10px rgba(0, 0, 0, 0.46);
+  }
+  .fascia_about_chi_interna h3 {
+    color: #E71D36;
+    font-family: Raisonne, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+  .titolo_sezione_about {
+    position: relative;
+    left: 15%;
+    width: 25%;
+    color: #E71D36;
+    font-family: Raisonne, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+  }
+  .sezione_testo_about_chi h1 {
+    font-family: Raisonne, sans-serif;
+    font-size: 2rem;
+    color: #011627;
+    letter-spacing: 2px;
+  }
+  .sezione_testo_about_chi p {
+    margin-top: 16px;
+    text-align: left;
+  }
+  /* ------------------ Passione --------------------------------*/
+  #fascia_about_passione {
+    padding-top: 200px;
+  }
+  .fascia_about_passione_interna {
+    width: 375px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sezioni_img_passione {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sezione_img_passione {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    margin: 32px 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sezione_img_passione h4 {
+    font-family: Raisonne, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: #011627;
+  }
+  .sezione_img_passione p {
+    margin-top: 16px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .sezione_img_passione img {
+    margin: 16px;
+  }
+  .sezione_about_skill {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 24px 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .skill_img {
+    width: 60px;
+  }
+  .sezioni_about_skill {
+    width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .skill_dati h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-right: 16px;
+    color: #011627;
+    white-space: nowrap;
+  }
+  .skill_dati h5 {
+    font-size: 1.25rem;
+    color: #FF9F1C;
+    margin: 0 8px;
+    white-space: nowrap;
+  }
+  .skill_dati h4 {
+    font-size: 1.75rem;
+    color: #181918;
+    margin: 0 0 0 0px;
+    white-space: nowrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */
