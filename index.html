@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157719981-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157719981-1');
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home | Carlo Ronchin Sviluppo Web | Design | SEO </title>
+  <title>Home | Carlo Ronchin Sviluppo Web & SEO</title>
   <meta name="theme-color" content="#2EC4B6" >
-  <meta name="description" content="Home | Carlo Ronchin Sviluppo Web | Design | SEO, Web Designer con base a Pianiga, Venezia. Realizzo Siti Web e servizi di posizionamento sui motori di ricerca, il mio ruolo è fondamentale per la tua presenza sul web.">
+  <meta name="description" content="Web Designer tra Venezia e Padova, realizzazione di siti web personalizzati e posizionamento sui motori di ricerca, scopri i miei lavori.">
 	<link rel="icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="author" content="Carlo Ronchin">
   <meta name="copyright" content="Copyright 2020 - Carlo Ronchin">
-  
+  <!-- Open Graph social -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.carloronchin.com/img/sfondo-min.png" >
+  <meta property="og:title" content="Carlo Ronchin | Web Designer">
+  <meta property="og:description" content="Carlo Ronchin web designer tra Venezia e Padova, realizzazione di siti web personalizzati e posizionamento sui motori di ricerca">
+  <meta property="og:url" content="https://www.carloronchin.com/">
+  <meta property="og:locale" content="it_IT">
+
 </head>
 <body>
 
   <!-------------------------------- Navbar  ------------------------------------>
 <nav id="desktop_menu">
-  <svg id="logo_navbar" width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg id="logo_navbar" onclick="window.location.href='index.html'" width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0)">
     <path id="pathh" d="M33.4647 41.6859H23.9325V26.771H20.8782C19.7971 26.771 18.9751 27.916 18.7202 28.3819C16.8965 31.7147 12.958 38.6398 12.045 39.986C11.1321 41.3323 9.80203 41.6638 9.16431 41.6859H0.135529C2.96611 37.0772 8.21356 28.7956 8.85799 27.6606C9.71361 26.1534 11.4725 24.9392 12.0095 24.8622C10.0956 24.3136 7.39406 22.3635 6.8497 21.6507C6.29969 20.9304 2.22832 17.0277 4.43134 9.63622C6.64206 2.21889 14.8442 1.73828 16.3942 1.64771C19.6509 1.45741 25.8405 1.45741 28.4518 1.45741C31.2179 1.45741 31.7424 2.75142 32.02 4.09597C32.2875 7.35122 32.7297 7.57362 32.7297 7.57362C36.0861 1.40311 40.5562 0.792856 42.0666 0.759859C43.2749 0.733461 45.4543 0.953422 46.9996 1.94939L46.3535 10.8662C45.748 12.8676 43.2992 12.2191 43.2992 12.2191C36.3447 10.9784 33.8451 15.0899 33.4647 17.3007V41.6859Z" fill="#2EC4B6"/>
     </g>
@@ -28,25 +45,25 @@
     </defs>
     </svg>
     <div class="nav_items">
-      <a class="nav_item" href="servizi.html">servizi</a>
-      <a class="nav_item" href="su_di_me.html">su di me</a>
-      <a class="nav_item" href="contatti.html">contatto</a>
+      <a class="nav_item" href="servizi.html" title="Pagina dei servizi">servizi</a>
+      <a class="nav_item" href="su_di_me.html" title="Pagina su di me">su di me</a>
+      <a class="nav_item" href="contatti.html" title="Pagina dei contatti">contatto</a>
     </div>
-    
-   
+
+
 </nav>
 
-  <img id="menu_logo" onclick="open_menu()"  src="img/menu.svg" alt="">
+  <img id="menu_logo" onclick="open_menu()"  src="img/menu.svg" alt="icona apertura del menù">
 
       <nav id="mobile_menu">
 
-          <img id="close_icon" onclick="close_menu()" src="img/close.svg" alt="">
+          <img id="close_icon" onclick="close_menu()" src="img/close.svg" alt="icona di chiusura del menù">
 
-          <a href="index.html">home</a>
-          <a href="servizi.html">servizi</a>
-          <a href="su_di_me.html">su di me</a>
-          <a href="contatti.html">contatto</a>
-        
+          <a href="index.html" title="Pagina principale">home</a>
+          <a href="servizi.html" title="Pagina dei servizi offerti">servizi</a>
+          <a href="su_di_me.html" title="Pagina su di me">su di me</a>
+          <a href="contatti.html" title="Pagina dei contatti">contatto</a>
+
       </nav>
   <!-------------------------------- Main ------------------------------------>
 
@@ -55,7 +72,7 @@
   <div class="hero">
     <h1>Carlo Ronchin</h1>
     <div class="sub_hero">
-      
+
           <div class="stripes">
             <svg id="stripe_1" width="217" height="17" viewBox="0 0 217 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.597351" y="16.4702" width="16" height="215.47" transform="rotate(-90 0.597351 16.4702)" fill="#2EC4B6"/>
@@ -64,7 +81,7 @@
             <svg id="stripe_2" width="217" height="17" viewBox="0 0 217 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.96051" y="16.1771" width="16" height="215.47" transform="rotate(-90 0.96051 16.1771)" fill="#2EC4B6"/>
               </svg>
-              
+
 
           </div>
 
@@ -83,14 +100,14 @@
 </div>
 
 <div class="fascia_servizi">
-    <h3 id="titolo_servizi_index">i miei Servizi</h3>
+    <h3 id="titolo_servizi_index">Servizi</h3>
 
   <!--------------------------- Servizio #1 Web Development --------------------------->
-    <div class="servizio">     
-      
-      
+    <div class="servizio">
+
+
           <img src="img/wev_dev.svg" alt="sviluppo codice di pagine web">
-       
+
 
         <div class="testo">
 
@@ -100,20 +117,19 @@
                   <rect x="0.902832" y="0.230469" width="169.378" height="4.22216" fill="#2EC4B6"/>
                   </svg>
               </div>
-              
+
               <p>
-                Ho studiato lo sviluppo di Siti Web Responsive, Content First e Mobile First con i linguaggi HTML e CSS, nello specifico nella versione HTML5 e CSS3. Ho affrontato il linguaggio JavaScript con i framework jQuery, jQuery UI, per l'interattività dell'utente con il web.
-                Postprocessori di CSS come SASS.
+                Ho studiato lo sviluppo di <em>Siti Web Responsive</em>, Content First e Mobile First  con i linguaggi <strong>HTML</strong> e <strong>CSS</strong>, nello specifico nella versione HTML5 e CSS3. Ho affrontato il linguaggio <strong>JavaScript</strong> con i framework jQuery, jQuery UI, per l'interattività dell'utente con il web e Pre-processori CSS come <strong>SASS</strong>. Infine utilizzo la suite di Seotester per controllare la seo del sito, in modo da scoprire l'efficacia che il sito ha su Google.
             </p>
-              
+
               <button onclick="window.location.href='servizi.html'">SCOPRI DI PIU'</button>
         </div>
-          
+
     </div>
 
   <!--------------------------- Servizio #2 Web Design --------------------------->
     <div class="servizio servizio_inverso">
-      
+
 
       <div class="testo">
 
@@ -123,29 +139,26 @@
                 <rect x="0.902832" y="0.230469" width="169.378" height="4.22216" fill="#2EC4B6"/>
                 </svg>
             </div>
-            
+
             <p>L'ambiente di sviluppo che utilizzo maggiormente è Visual Studio Code. <br>
-               I software per gli elementi grafici e di prototipazione sono Figma, Adobe XD mentre
-                per l’editing delle immagini utilizzo
-                 Photoshop. PEr reperire Font, Icone, Immagini, utilizzo 
-                Font Awesome, Font Squirrel, Pixabay, Shutterstock e le altre numerose raccolte
-                presenti nel Web, sia gratuite che a pagamento.</p>
-            
+               I software per gli <em>elementi grafici e di prototipazione</em> sono <strong>Figma</strong>, <strong>Adobe XD</strong> mentre per l’ <em>editing delle immagini</em> utilizzo <strong>Photoshop</strong>. <br> Per reperire Font, Icone, Immagini, utilizzo Font Awesome, Font Squirrel, Pixabay, Shutterstock e le altre numerose raccolte presenti nel Web, sia gratuite che a pagamento.
+            </p>
+
                 <button onclick="window.location.href='servizi.html'">SCOPRI DI PIU'</button>
       </div>
 
-      
+
       <img src="img/web_des.svg" alt="sviluppo design pagine web">
-     
+
   </div>
 
   <!--------------------------- Servizio #3 Web Manutenzione --------------------------->
-  <div class="servizio"> 
-        
+  <div class="servizio">
 
-          <img src="img/web_man.svg" alt="">
 
-        
+          <img src="img/web_man.svg" alt="computer con ingranaggi manutenzione">
+
+
 
         <div class="testo">
 
@@ -157,18 +170,13 @@
                     </svg>
 
                 </div>
-          
-                <p>Non basta creare un sito web, bisogna anche tenerlo aggiornato (es. inserimento
-                  o modifica di funzioni e plugin, servizi di backup delle pagine e 
-                  del database, servizi statistici…) si può incorrere in singole problematiche
-                    o nuove opportunità (es. interventi legati a problematiche dei server e dell’hosting,
-                  evoluzione delle logiche di funzionamento dei motori di ricerca,
-                  nuovi sviluppi e funzionalità del software …).
+
+                <p>Non basta creare un sito web, bisogna anche tenerlo aggiornato (es. inserimento o modifica di funzioni e plugin, servizi di backup delle pagine e del database, servizi statistici…) si può incorrere in singole problematiche o nuove opportunità (es. interventi legati a problematiche dei server e dell’hosting, evoluzione delle logiche di funzionamento dei motori di ricerca, nuovi sviluppi e funzionalità del software …).
                 </p>
-          
+
                 <button onclick="window.location.href='servizi.html'">SCOPRI DI PIU'</button>
          </div>
-      
+
   </div>
 
 </div>
@@ -177,21 +185,21 @@
 
     <div id="trigger_2" class="fascia_shell">
             <div class="shell_row">
-              <h5>BUILD OWN SHELL</h5>
-              <h5>BUILD OWN SHELL</h5>
-              <h5>BUILD OWN SHELL</h5>
+              <h5>MAKE IT OWN</h5>
+              <h5>MAKE IT OWN</h5>
+              <h5>MAKE IT OWN</h5>
             </div>
             <div class="shell_row">
-              <h5>BUILD OWN SHELL</h5>
-              <h5 id="row_center">BUILD OWN SHELL</h5>
-              <h5>BUILD OWN SHELL</h5>
+              <h5>MAKE IT OWN</h5>
+              <h5 id="row_center">MAKE IT OWN</h5>
+              <h5>MAKE IT OWN</h5>
             </div>
             <div class="shell_row">
-              <h5>BUILD OWN SHELL</h5>
-              <h5>BUILD OWN SHELL</h4>
-              <h5>BUILD OWN SHELL</h4>
+              <h5>MAKE IT OWN</h5>
+              <h5>MAKE IT OWN</h4>
+              <h5>MAKE IT OWN</h4>
             </div>
-      
+
     </div>
 
 <!--------------------------- Fascia Portfolio --------------------------->
@@ -205,27 +213,30 @@
     <div class="concept concept_margin">
 
         <div class="testo_concept testo_concept_padding">
-            <h1 id="title_1">MILKA</h1>
-            <p id="text_1">Quanto buono può essere un milkshake al cioccolato della Milka, bè nel caso, una idea per rappresentarlo io c'è l'ho.
+            <h4 id="title_1">MagneticGif</h4>
+            <p id="text_1">
+              MagneticGif è la cornice magnetica in formato fototessera, per attaccare
+              i tuoi ricordi, ovunque tu voglia.
             </p>
-            <a href="img/Artboard_Milkshake.png" target="_blank"><button class="concept_testo_button">VAI AL CONCEPT</button></a>
+            <a href="http://carloronchin.altervista.org/" title="Miniatura MAgneticGif" target="_blank"><button class="concept_testo_button">Vai al sito</button></a>
         </div>
 
-        <img src="img/Artboard_Milkshake.png" alt="sito web concept Milka" width="50%" height="50%">
+        <img src="img/minin.png" alt="sito web concept Milka">
 
     </div>
 
     <!------------- Concept #2 --------------------------->
     <div class="concept concept_inverso">
 
-      <img src="img/Artboard_Trattoria.png" alt="sito web concept Trattoria" width="50%" height="50%">
+      <img src="img/sapori.png" alt="sito web concept Antichi Sapori">
 
 
       <div class="testo_concept inverso_testo_concept">
-          <h1 id="title_2">AI MONTI</h1>
-          <p id="text_2">Sito web di una classica trattoria romana, il sito oltre a fornire tutte le informazioni generali, da risalto alle specialità tipiche del locale, perchè l'importante è magnà.
+          <h4 id="title_2">Antichi Sapori</h4>
+          <p id="text_2">
+            Antichi Sapori, la pizzeria dove si produce l'autentica pizza napoletana, yummy.
           </p>
-          <a href="img/Artboard_Trattoria.png" target="_blank"><button class="concept_testo_button">VAI AL CONCEPT</button></a>
+          <a href="https://antichisapori.netlify.app/" title="Pagina Antichi Sapori" target="_blank"><button class="concept_testo_button">Vai al sito</button></a>
       </div>
 
 
@@ -235,14 +246,15 @@
     <div class="concept">
 
       <div class="testo_concept testo_concept_padding">
-          <h1 id="title_3">NIKE</h1>
-          <p id="text_3">Dare risalto al prodotto in un e-commerce è fondamentale, il   passaggio successivo è creare un'esperienza il più semplice possibile all'utente.
-          Infatti in questo caso è possibile comprare il prodotto in soli 3 click.
+          <h4 id="title_3">GDM</h4>
+          <p id="text_3">
+            GDM è un sito che ho sviluppato, da una mia idea per una ipotetica
+            azienda edilizia.
           </p>
-          <a href="img/Artboard_Nike.png" target="_blank"><button class="concept_testo_button">VAI AL CONCEPT</button></a>
+          <a href="https://prova-gdm.netlify.app/" title="Pagina concept GDM" target="_blank"><button class="concept_testo_button">Vai al sito</button></a>
       </div>
 
-      <img src="img/Artboard_Nike.png" alt="sito web concept Nike" width="623.250" height="350.578">
+      <img src="img/gdm.png" alt="sito web concept GDM">
 
 
   </div>
@@ -253,8 +265,8 @@
 <div class="footer">
 
       <div class="fascia_footer_upside">
-        
-          <h1>Contatto</h1>
+
+          <h3>Contatto</h3>
 
           <form name="contact" method="POST" class="form-contatto" data-netlify="true">
             <div class="input_fields">
@@ -262,39 +274,38 @@
               <label><input class="input" name="email"  type="email" placeholder="E-mail"><br></label>
               <label><input class="input" name="subject" type="text" placeholder="Oggetto"></label>
             </div>
-  
+
             <div class="msg">
               <textarea name="message" placeholder="Messaggio"></textarea>
-              
+
             </div>
             <button type="submit">INVIA</button>
         </form>
       </div>
-    
+
 
       <div class="fascia_footer_downside">
 
         <div class="box_footer footer_logo">
           <img src="img/footer_logo.svg" alt="Carlo Ronchin">
         </div>
-        
+
         <div class="box_footer footer_privacy">
-          <a href="">Privacy Policy</a>
-          <a href="">Cookie Policy</a>
+          <a href="privacy.html" title="Privacy Policy">Privacy Policy</a>
 
           <div class="location">
-            <img src="img/location.svg" alt="">
+            <img src="img/location.svg" alt="punto per indicare la posizione">
             <p>Pianiga, VE</p>
           </div>
-          
+
         </div>
 
         <div class="box_footer footer_social">
-          
-          <a href="https://www.instagram.com/carlospace0/?hl=it" target="_blank"><img src="img/instagram_footer.svg" alt="Instagram"></a>
-      <a href="https://twitter.com/carloronchin" target="_blank"><img src="img/twitter_footer.svg" alt="Twitter"></a>
-      <a href="https://www.linkedin.com/in/carlo-ronchin-31b03891/" target="_blank"><img src="img/linkedin_footer.svg" alt="LinkedIn"></a>
-          
+
+          <a href="https://www.instagram.com/carlospace0/?hl=it" title="Instagram di Carlo Ronchin" target="_blank"><img src="img/instagram_footer.svg" alt="Instagram"></a>
+      <a href="https://twitter.com/carloronchin" title="Twitter di Carlo Ronchin" target="_blank"><img src="img/twitter_footer.svg" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/carlo-ronchin-31b03891/" title="LinkedIn di Carlo Ronchin" target="_blank"><img src="img/linkedin_footer.svg" alt="LinkedIn"></a>
+
         </div>
       </div>
 

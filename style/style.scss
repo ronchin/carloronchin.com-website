@@ -325,7 +325,7 @@ nav a{
   z-index: 1;
 }
 
-.testo_concept h1{
+.testo_concept h4{
     font-family: Raisonne, sans-serif;
     letter-spacing: 1px;
     font-size: 140px;
@@ -371,11 +371,17 @@ nav a{
     font-family: Akkurat, sans-serif;
     padding-top: 100px;
 }
-.footer h1 {
+.footer h3 {
     font-family: Raisonne;
     font-size: 4.6875rem;
     letter-spacing: -7px;
     color: #1E1E1E;
+}
+.footer h1 {
+  font-family: Raisonne;
+  font-size: 4.6875rem;
+  letter-spacing: -7px;
+  color: #1E1E1E;
 }
 .testo_contatto {
     display: flex;
@@ -767,53 +773,6 @@ button {
     object-fit: cover;
 }
 
-.flex_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-}
-
-.button_servizio {
-
-    background: linear-gradient( to left, white 50%, #1E1E1E 50% );
-    background-size: 200% 100%;
-    color: #1E1E1E;
-    background-position: right bottom;
-    overflow: hidden;
-    transition: 0.3s;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.button_servizio:hover {
-    background-position: left bottom;
-    color: $fifty_color;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -960,17 +919,25 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     flex: 1;
+    margin-right: 5px;
 }
 .sezione_about_skill {
     width: 100%;
     min-width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 24px auto;
     flex-wrap: nowrap;
 }
+
+.sezioni_about_skill img {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
 .skill_data{
     margin-left: 16px;
     width: 70%;
@@ -979,6 +946,7 @@ button {
     justify-content: space-between;
     align-items: center;
 }
+
 .skill_dati{
     font-family: Raisonne, sans-serif;
     width: 100%;
@@ -998,7 +966,7 @@ button {
 .skill_dati h5{
     font-size: 1.25rem;
     color: $seventhy_color;
-    margin: 0 16px;
+    margin: 0;
     white-space: nowrap;
 }
 
@@ -1061,8 +1029,37 @@ button {
 
 
 
+/* Policy Privacy */
+
+.policy {
+    background-color: $secondary_color !important;
+}
+
+.fascia_policy {
+  margin-top: 150px;
+  margin-left: 80px;
+  line-height: 1.5;
+}
+
+.list_type{
+    font-family: Raisonne, Arial, sans-serif;
+    font-size: 1.75rem;
+}
 
 
+.policy h1 {
+    font-family: Raisonne, Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.policy h3 {
+    font-family: Raisonne, Arial, sans-serif;
+    font-size: 2rem;
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -1190,47 +1187,50 @@ button {
     margin: 16px;
 }
 
+/* ------------------ Su di Me --------------------------------*/
+
 .sezione_about_skill {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        margin: 24px 0;
+        margin: 24px 10px;
         flex-wrap: nowrap;
     }
-    .skill_img{
-        width: 60px;
-    }
 
+.skill_img{
+        width: 40px;
+}
 
-    .sezioni_about_skill{
-      width: 375px;
+.fascia_about_skill_interna {
+  width: 90%;
+}
+
+.sezioni_about_skill{
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       flex: 1;
-  }
+}
 
-
-    .skill_dati h3{
+.skill_dati h3{
         font-size: 1.5rem;
         letter-spacing: 1px;
         margin-right: 16px;
         color: $primary_color;
         white-space: nowrap;
-    }
-    .skill_dati h5{
-        font-size: 1.25rem;
-        color: $seventhy_color;
-        margin: 0 8px;
-        white-space: nowrap;
-    }
+}
+
+.skill_dati h5{
+        display: none;
+}
     
-    .skill_dati h4{
-        font-size: 1.75rem;
+.skill_dati h4{
+        font-size: 2.15rem;
         color: #181918;
         margin: 0 0 0 0px;
         white-space: nowrap;

@@ -392,9 +392,7 @@ nav a {
 }
 
 .concept {
-  margin: 50px auto;
-  max-width: 75%;
-  min-width: 10%;
+  margin: 50px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,10 +438,10 @@ nav a {
   z-index: 1;
 }
 
-.testo_concept h1 {
+.testo_concept h4 {
   font-family: Raisonne, sans-serif;
   letter-spacing: 1px;
-  font-size: 140px;
+  font-size: 100px;
   color: transparent;
 }
 
@@ -451,6 +449,13 @@ nav a {
   font-size: 18px;
   color: #fff;
   opacity: 0;
+  padding-top: 24px;
+}
+
+@media and (min-width: 610px) and (max-width: 1000px) {
+  .testo_concept h4 {
+    font-size: 70px;
+  }
 }
 
 .testo_concept_padding {
@@ -459,8 +464,7 @@ nav a {
 
 .concept img {
   z-index: 1;
-  width: 80%;
-  height: 100%;
+  width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -488,6 +492,13 @@ nav a {
   background-color: #2EC4B6;
   font-family: Akkurat, sans-serif;
   padding-top: 100px;
+}
+
+.footer h3 {
+  font-family: Raisonne;
+  font-size: 4.6875rem;
+  letter-spacing: -7px;
+  color: #1E1E1E;
 }
 
 .footer h1 {
@@ -716,9 +727,11 @@ button {
   transition: 0.3s;
 }
 
+
+
 /*----------  MEDIA QUERIES ------------*/
 /* Media Query Smartphone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   /*---------- Navbar ----------*/
   #desktop_menu {
     display: none;
@@ -821,6 +834,14 @@ button {
   .testo_concept p {
     font-size: 1rem;
     margin-top: 0px;
+  }
+
+  .testo_concept h4 {
+    font-size: 70px;
+  }
+
+  .concept img {
+    width: 90%;
   }
   /*-------- Footer ---------*/
   .form-contatto {
@@ -958,42 +979,6 @@ button {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.flex_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 50px auto;
-}
-
-.button_servizio {
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #1E1E1E));
-  background: linear-gradient(to left, white 50%, #1E1E1E 50%);
-  background-size: 200% 100%;
-  color: #1E1E1E;
-  background-position: right bottom;
-  overflow: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.button_servizio:hover {
-  background-position: left bottom;
-  color: #FDFFFC;
 }
 
 /*----------------------- su_di_me.html ---------------------------------------*/
@@ -1217,6 +1202,7 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-right: 5px;
 }
 
 .sezione_about_skill {
@@ -1229,15 +1215,21 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 24px auto;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.sezioni_about_skill img {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .skill_data {
@@ -1288,7 +1280,7 @@ button {
 .skill_dati h5 {
   font-size: 1.25rem;
   color: #FF9F1C;
-  margin: 0 16px;
+  margin: 0;
   white-space: nowrap;
 }
 
@@ -1342,6 +1334,36 @@ button {
 .footer_contatti {
   padding-top: 200px;
   border: none;
+}
+
+/* Policy Privacy */
+.policy {
+  background-color: #2EC4B6 !important;
+}
+
+.fascia_policy {
+  margin-top: 150px;
+  margin-left: 80px;
+  line-height: 1.5;
+}
+
+.list_type {
+  font-family: Raisonne, Arial, sans-serif;
+  font-size: 1.75rem;
+}
+
+.policy h1 {
+  font-family: Raisonne, Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.policy h3 {
+  font-family: Raisonne, Arial, sans-serif;
+  font-size: 2rem;
+  margin-top: 32px;
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES ---- su_di_me.html */
@@ -1497,6 +1519,7 @@ button {
   .sezione_img_passione img {
     margin: 16px;
   }
+  /* ------------------ Su di Me --------------------------------*/
   .sezione_about_skill {
     width: 100%;
     display: -webkit-box;
@@ -1506,21 +1529,24 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 24px 0;
+    margin: 24px 10px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
   .skill_img {
-    width: 60px;
+    width: 40px;
+  }
+  .fascia_about_skill_interna {
+    width: 90%;
   }
   .sezioni_about_skill {
-    width: 375px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1548,16 +1574,22 @@ button {
     white-space: nowrap;
   }
   .skill_dati h5 {
-    font-size: 1.25rem;
-    color: #FF9F1C;
-    margin: 0 8px;
-    white-space: nowrap;
+    display: none;
   }
   .skill_dati h4 {
-    font-size: 1.75rem;
+    font-size: 2.15rem;
     color: #181918;
     margin: 0 0 0 0px;
     white-space: nowrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/*----------  MEDIA QUERIES ------------*/
+/* Media Query Smartphone */
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .testo_concept h4 {
+    font-size: 50px;
+  }
+}
